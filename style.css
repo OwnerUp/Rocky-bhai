@@ -1,0 +1,111 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+
+body{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#0b0f18;
+color:white;
+overflow:hidden;
+}
+
+.bg{
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 20% 30%, rgba(0,140,255,.25), transparent 40%),
+radial-gradient(circle at 80% 70%, rgba(255,120,0,.25), transparent 40%),
+linear-gradient(160deg,#0b0f18,#111a2a,#0b0f18);
+z-index:-1;
+}
+
+.card{
+width:420px;
+max-width:92vw;
+padding:46px 32px;
+border-radius:26px;
+background:rgba(8,16,28,.96);
+text-align:center;
+box-shadow:0 40px 120px rgba(0,0,0,.7);
+}
+
+/* DP POP POP animation */
+.avatar-wrap{
+width:150px;height:150px;
+margin:0 auto 18px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#00c6ff,#ffd400,#ff7a00);
+padding:5px;
+box-shadow:0 0 40px rgba(0,198,255,.5);
+animation:pop 1.6s infinite ease-in-out;
+}
+
+@keyframes pop{
+0%{transform:scale(1)}
+25%{transform:scale(1.08)}
+40%{transform:scale(0.97)}
+60%{transform:scale(1.06)}
+80%{transform:scale(0.99)}
+100%{transform:scale(1)}
+}
+
+.avatar{
+width:130px;height:130px;
+border-radius:50%;
+object-fit:cover;
+background:#000;
+}
+
+h1{
+font-size:28px;
+font-weight:700;
+background:linear-gradient(90deg,#ffd400,#00d2ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:6px;
+}
+
+.subtitle{
+opacity:.85;
+margin-bottom:24px;
+font-size:14px;
+}
+
+.timer{
+font-size:52px;
+font-weight:700;
+color:#00d2ff;
+margin:10px 0;
+}
+
+.small{
+opacity:.7;
+margin-bottom:22px;
+}
+
+.cta{
+display:inline-block;
+background:linear-gradient(135deg,#00c6ff,#0066ff);
+padding:16px 38px;
+border-radius:30px;
+text-decoration:none;
+font-weight:700;
+color:white;
+margin-bottom:20px;
+box-shadow:0 15px 40px rgba(0,120,255,.4);
+transition:.25s;
+}
+
+.cta:hover{
+transform:translateY(-2px);
+box-shadow:0 25px 60px rgba(0,120,255,.6);
+}
+
+.tagline{
+opacity:.85;
+font-size:14px;
+}
